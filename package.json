@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite --port 3000",
     "build": "tsc && vite build",
+    "build_develop": "tsc && vite build --mode develop",
+    "build_staging": "tsc && vite build --mode staging",
     "preview": "vite preview",
     "test": "vitest",
     "lint": "eslint --ext .js,.cjs,.ts,.tsx .",
