@@ -10,7 +10,7 @@ function FormErrorMessage({ message }: FormErrorMessageProps) {
   const theme = useTheme();
   return (
     <>
-      {!!message && (
+      {Boolean(message) && (
         <Typography
           variant="text12"
           color={theme.palette.error.main}

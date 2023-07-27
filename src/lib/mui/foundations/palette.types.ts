@@ -5,7 +5,7 @@ declare module "@mui/material/styles" {
   // eslint-disable-next-line @typescript-eslint/no-empty-interface
   interface Palette {}
 
-  // allow configuration using `createTheme`
+  // Allow configuration using `createTheme`
   // eslint-disable-next-line @typescript-eslint/no-empty-interface
   interface PaletteOptions {}
 }

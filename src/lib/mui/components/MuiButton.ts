@@ -1,4 +1,4 @@
-// import { buttonClasses } from "@mui/material/Button";
+// Import { buttonClasses } from "@mui/material/Button";
 import type {
   ComponentsPropsList,
   CSSInterpolation,

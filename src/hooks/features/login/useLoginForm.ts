@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import { yupResolver } from '@hookform/resolvers/yup';
+import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
 type Params = {
@@ -12,7 +12,10 @@ const schema = yup.object({
     .min(1, "This field is required")
     .max(20, "This field cannot exceed 20 characters")
     .required("This field is required"),
-  password: yup.string().min(1, "This field is required").required("This field is required")
+  password: yup
+    .string()
+    .min(1, "This field is required")
+    .required("This field is required"),
 });
 type FormData = yup.InferType<typeof schema>;
 

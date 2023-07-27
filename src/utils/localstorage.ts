@@ -1,14 +1,16 @@
-const AUTH_KEY = 'authData';
-const SESSION_KEY = 'session';
+const AUTH_KEY = "authData";
+const SESSION_KEY = "session";
 interface localStorageDataType {
   tokenInfo: {
     accessToken: string;
     refreshToken: string;
-  }
+  };
 }
 export const LoginStorage = {
-  getData():localStorageDataType | null {
-    const localStorageData = JSON.parse(localStorage.getItem(AUTH_KEY) ?? 'null') as( localStorageDataType | null);
+  getData(): localStorageDataType | undefined {
+    const localStorageData = JSON.parse(
+      localStorage.getItem(AUTH_KEY) ?? "null"
+    ) as localStorageDataType | undefined;
     if (!localStorageData) return null;
     return localStorageData;
   },
@@ -23,7 +25,9 @@ export const LoginStorage = {
 
 export const SessionStorage = {
   getData() {
-    const localStorageData = JSON.parse(localStorage.getItem(SESSION_KEY) ?? 'null') as unknown;
+    const localStorageData = JSON.parse(
+      localStorage.getItem(SESSION_KEY) ?? "null"
+    ) as unknown;
     return localStorageData;
   },
   setData(res: unknown) {

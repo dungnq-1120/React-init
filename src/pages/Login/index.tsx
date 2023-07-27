@@ -1,13 +1,15 @@
-import LoginForm from "~/components/organisms/login/LoginForm"
+import LoginForm from "~/components/organisms/login/LoginForm";
 
-type Props = {}
-
-const Login = (props: Props) => {
+const Login = () => {
   return (
     <div>
-      <LoginForm onLogin={() => {}}/>
+      <LoginForm
+        onLogin={() => {
+          return "";
+        }}
+      />
     </div>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;

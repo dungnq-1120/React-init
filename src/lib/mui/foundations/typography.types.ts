@@ -15,7 +15,7 @@ declare module "@mui/material/styles" {
     text8: CSSProperties;
   }
 
-  // allow configuration using `createTheme`
+  // Allow configuration using `createTheme`
   interface TypographyVariantsOptions {
     heading18?: CSSProperties;
     heading16?: CSSProperties;

@@ -1,6 +1,6 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
-import counterReducer from './counterReducer';
+import counterReducer from "./counterReducer";
 
 export interface CounterStateType {
   value: number;
@@ -11,7 +11,7 @@ const initialState: CounterStateType = {
 };
 
 export const counterSlice = createSlice({
-  name: 'counter',
+  name: "counter",
   initialState,
   reducers: counterReducer,
 });

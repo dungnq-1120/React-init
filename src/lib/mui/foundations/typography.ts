@@ -11,7 +11,7 @@ import type { ThemeOptions } from "@mui/material/styles";
  *
  * https://github.com/mui/material-ui/blob/v5.10.15/packages/mui-material/src/styles/createTypography.js#L20
  */
-const fontSize = 14; // px
+const fontSize = 14; // Px
 
 /**
  * Tell MUI what's the font-size on the html element.

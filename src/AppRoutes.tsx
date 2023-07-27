@@ -8,15 +8,14 @@ import HomePage from "./pages/Home";
 const AppRoutes = () => {
   return (
     <Routes>
-       <Route element={<AuthenticatedLayout />}>
+      <Route element={<AuthenticatedLayout />}>
         {/* all route have authenticate layout as home page, fee page.. */}
-        <Route path={routerPath.homePage} element={<HomePage/>}/>
+        <Route path={routerPath.homePage} element={<HomePage />} />
       </Route>
       <Route element={<DefaultLayout />}>
         {/* all route have default layout as login, register... */}
-        <Route path={routerPath.Login} element={<Login />}/>
+        <Route path={routerPath.Login} element={<Login />} />
       </Route>
-
     </Routes>
   );
 };

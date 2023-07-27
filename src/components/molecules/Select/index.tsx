@@ -5,10 +5,10 @@ import type {
 } from "@mui/material/Select";
 import MuiSelect, { selectClasses as baseClasses } from "@mui/material/Select";
 import { styled } from "@mui/material/styles";
-import isEmpty from 'lodash/isEmpty'
-import isNil from 'lodash/isNil'
-import isNumber from 'lodash/isNumber'
-import isString from 'lodash/isString'
+import isEmpty from "lodash/isEmpty";
+import isNil from "lodash/isNil";
+import isNumber from "lodash/isNumber";
+import isString from "lodash/isString";
 
 import OutlinedInputText from "~/components/atoms/OutlinedInputText";
 
@@ -101,10 +101,7 @@ function Select<T = unknown>(props: SelectProps<T>) {
   const { options, size = "medium", placeholder, renderValue, ...rest } = props;
 
   const internalRenderValue: SelectProps<T>["renderValue"] = (selected) => {
-    if (
-      placeholder &&
-      (isNil(selected) || isEmpty(selected))
-    ) {
+    if (placeholder && (isNil(selected) || isEmpty(selected))) {
       return <em>{placeholder}</em>;
     }
 
@@ -129,7 +126,7 @@ function Select<T = unknown>(props: SelectProps<T>) {
   return (
     <StyledSelect
       MenuProps={MenuProps}
-      displayEmpty={!!placeholder}
+      displayEmpty={Boolean(placeholder)}
       renderValue={internalRenderValue}
       size={size}
       {...rest}

@@ -1,5 +1,5 @@
-import type { PayloadAction } from '@reduxjs/toolkit';
-import { type CounterStateType } from './counterSlice';
+import type { PayloadAction } from "@reduxjs/toolkit";
+import { type CounterStateType } from "./counterSlice";
 
 export default {
   increment(state: CounterStateType) {

@@ -12,11 +12,13 @@ export const ProcessLoading = styled("div", {
   zIndex: 1001,
   animationFillMode: "forwards",
 
-  ...(isDone ? {
-    animation: `${doneAnimation} .5s ease`
-  }: {
-    animation: `${loaderAnimation} 1.5s ease`
-  }),
+  ...(isDone
+    ? {
+        animation: `${doneAnimation} .5s ease`,
+      }
+    : {
+        animation: `${loaderAnimation} 1.5s ease`,
+      }),
 }));
 
 const loaderAnimation = keyframes`

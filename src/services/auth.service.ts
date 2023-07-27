@@ -6,11 +6,11 @@ export default class AuthServices {
     this.restClient = restClient;
   }
 
-  login(params: any) {
+  async login(params: any) {
     return this.restClient.post("/auth/login", params);
   }
 
-  getProduct(params?: any) {
+  async getProduct(params?: any) {
     return this.restClient.get("/products", params);
   }
 }

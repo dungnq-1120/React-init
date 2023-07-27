@@ -30,7 +30,7 @@ function LoginForm({ onLogin }: Props) {
             id="email"
             size="medium"
             placeholder="Email address"
-            error={!!errors.email}
+            error={Boolean(errors.email)}
             variant="outlined"
             label="メールアドレス"
             {...register("email")}
@@ -43,7 +43,7 @@ function LoginForm({ onLogin }: Props) {
             id="password"
             size="medium"
             placeholder="Password"
-            error={!!errors.password}
+            error={Boolean(errors.password)}
             type="password"
             label="パスワード"
             {...register("password")}

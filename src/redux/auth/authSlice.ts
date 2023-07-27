@@ -15,7 +15,7 @@ export const authSlice = createSlice({
   name: "auth",
   initialState,
   reducers,
-  extraReducers
+  extraReducers,
 });
 
 // Action creators are generated for each case reducer function

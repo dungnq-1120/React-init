@@ -8,7 +8,7 @@ declare module "@mui/material/styles" {
     brandPalette: typeof colors;
   }
 
-  // allow configuration using `createTheme`
+  // Allow configuration using `createTheme`
   interface ThemeOptions {
     brandPalette: typeof colors;
   }

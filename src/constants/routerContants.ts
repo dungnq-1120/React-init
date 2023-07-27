@@ -1,4 +1,4 @@
 export const routerPath = {
-  Login: '/login',
-  homePage: '/'
-}
+  Login: "/login",
+  homePage: "/",
+};
